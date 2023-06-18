@@ -11,6 +11,11 @@ module.exports = {
       secondary: 'var(--color-secondary)',
       white: 'var(--color-white)',
       black: 'var(--color-black)',
+      danger: 'var(--color-danger)',
+      btn_primary: {
+        DEFAULT: 'var(--color-btn-primary)',
+        hover: 'var(--color-btn-primary-hover)'
+      },
     },
     extend: {
       maxWidth: {

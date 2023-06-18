@@ -122,13 +122,13 @@ export default function Footer() {
   return (
     <div className="bg-black text-white">
       <div className="max-w-1400 mx-auto">
-        <div className="md:flex justify-around py-10 md:py-20">
+        <div className="text-center md:text-start md:flex justify-around py-10 md:py-20">
           {FOOTER_MENU.map(({title, sub_menu}) => (
             <div key={title}>
               <h3>
                 {title}
               </h3>
-              <ul className="space-y-3">
+              <ul className="space-y-3 mb-10">
                 {sub_menu.map(({title, desc, url}) => (
                   <li key={title}>
                     <Link href={url}>

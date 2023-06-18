@@ -7,6 +7,10 @@
   --color-secondary: #697b8c;
   --color-white: #ffffff;
   --color-black: #000000;
+  --color-danger: #f5222d;
+  --color-btn-primary: #1677ff;
+  --color-btn-primary-hover: #4096ff;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,6 +19,9 @@
     --color-secondary: #b0a89c;
     --color-white: #000000;
     --color-black: #ffffff;
+    --color-danger: #e24348;
+    --color-btn-primary: #1765ae;
+    --color-btn-primary-hover: #165f99;
   }
 }
 
@@ -36,7 +43,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  margin-bottom: 14px;
   font-weight: bold;
 }
 
@@ -48,6 +56,9 @@ h3 {
 
 @layer components {
   .btn-primary {
-    @apply bg-primary
+    @apply bg-btn_primary py-1 px-4 text-white rounded-sm;
+    &:hover {
+      @apply bg-btn_primary-hover text-white;
+    }
   }
 }
