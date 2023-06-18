@@ -152,7 +152,9 @@ export default function Footer() {
           <span>
             by
           </span>
-          <Link href="https://xtech.antfin.com">
+          <Link 
+            className="text-white"
+            href="https://xtech.antfin.com">
             XTech
           </Link>
         </p>

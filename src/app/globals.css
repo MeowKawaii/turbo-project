@@ -24,9 +24,9 @@ body {
 }
 
 a {
-  color: var(--color-white) !important;
+  color: var(--color-white);
   &:hover {
-    color: var(--color-primary) !important;
+    color: var(--color-primary);
   }
 }
 
