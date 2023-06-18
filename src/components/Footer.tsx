@@ -120,25 +120,42 @@ const FOOTER_MENU = [{
 
 export default function Footer() {
   return (
-    <div className="bg-black text-white flex justify-center items-center">
-      <div className="max-w-5xl flex justify-between space-x-10">
-        {FOOTER_MENU.map(({title, sub_menu}) => (
-          <div key={title}>
-            <h3>
-              {title}
-            </h3>
-            <ul>
-              {sub_menu.map(({title, desc, url}) => (
-                <li key={title}>
-                  <Link href={url}>
-                    {title}
-                  </Link>
-                  {desc && <p className="text-xs inline text-gray-600">{` - ${desc}`}</p>}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+    <div className="bg-black text-white">
+      <div className="max-w-1400 mx-auto">
+        <div className="md:flex justify-around py-10 md:py-20">
+          {FOOTER_MENU.map(({title, sub_menu}) => (
+            <div key={title}>
+              <h3>
+                {title}
+              </h3>
+              <ul className="space-y-3">
+                {sub_menu.map(({title, desc, url}) => (
+                  <li key={title}>
+                    <Link href={url}>
+                      {title}
+                    </Link>
+                    {desc && <p className="text-secondary inline text-gray-600">{` - ${desc}`}</p>}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+        <hr className="text-secondary" />
+        <p className="text-secondary text-base text-center py-4 space-x-2">
+          <span>
+            Made with
+          </span>
+          <span>
+            ❤
+          </span>
+          <span>
+            by
+          </span>
+          <Link href="https://xtech.antfin.com">
+            XTech
+          </Link>
+        </p>
       </div>
     </div>
   )
