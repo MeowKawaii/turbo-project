@@ -1,5 +1,6 @@
 import React from "react"
 import Image from 'next/image'
+import Link from "next/link"
 
 import MenuItem from '~/components/MenuItem'
 
@@ -13,16 +14,13 @@ const MENUS = [{
   title: 'Blog',
   url: 'https://pro.ant.design/blog/change-theme',
 },{
-  title: 'version',
-  url: '',
-},{
   title: 'GitHub',
   url: 'https://github.com/ant-design/ant-design-pro',
 },]
 
 export default function Header() {
   return (
-    <nav className="flex justify-center sm:justify-between items-center py-5 px-8 drop-shadow-md bg-white">
+    <nav className="flex justify-center md:justify-between items-center px-14 h-12 md:h-16 drop-shadow-md bg-white">
       <div className="flex">
         <Image
           src="/logo.svg"
@@ -31,9 +29,13 @@ export default function Header() {
           priority
           alt="Ant Logo"
         />
-        <h1>Ant Design Pro</h1>
+        <Link 
+          href="https://pro.ant.design/"
+          className="text-black text-xl sm:text-2xl font-medium ml-4">
+          Ant Design Pro
+        </Link>
       </div>
-      <ul className="flex items-center space-x-10">
+      <ul className="hidden md:flex items-center space-x-10">
         {MENUS.map(({title, url}) => (
           <li key={title}>
             <MenuItem title={title} url={url} />

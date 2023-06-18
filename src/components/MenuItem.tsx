@@ -8,7 +8,7 @@ interface MenuItemProps {
 
 export default function MenuItem({title, url}: MenuItemProps) {
   return (
-    <Link href={url}>
+    <Link className="text-secondary" href={url}>
       {title}
     </Link>
   )
