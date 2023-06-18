@@ -3,15 +3,48 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --color-primary: #40a9ff;
+  --color-secondary: #697b8c;
+  --color-white: #ffffff;
+  --color-black: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
+    --color-primary: #165c94;
+    --color-secondary: #b0a89c;
+    --color-white: #000000;
+    --color-black: #ffffff;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
+}
+
+a {
+  &:hover {
+    color: var(--color-primary);
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary
+  }
 }
