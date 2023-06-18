@@ -9,15 +9,15 @@ interface FeatureItemProps {
 
 export default function FeatureItem({title, desc, src}: FeatureItemProps) {
   return (
-    <div className="flex flex-col justify-center items-center space-y-4">
+    <div className="flex flex-col justify-center items-center mb-16 mx-2">
       <Image
           src={src}
           width={60}
           height={60}
           alt={src}
         />
-        <h3>{title}</h3>
-        <p>{desc}</p>
+        <p className="my-5 text-xl font-bold">{title}</p>
+        <p className="mb-3 text-secondary">{desc}</p>
     </div>
   )
 }

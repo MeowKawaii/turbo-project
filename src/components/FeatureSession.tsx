@@ -31,7 +31,7 @@ const FEATURES = [{
 export default function FeatureSession() {
 
   return (
-    <div className='max-w-7xl mx-auto my-20'>
+    <div className='max-w-1400 mx-auto my-16'>
       <ul className="flex flex-wrap justify-between items-center">
         {FEATURES.map(({title, desc, src}) => (
           <li 
