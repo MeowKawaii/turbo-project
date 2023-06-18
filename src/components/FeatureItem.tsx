@@ -17,7 +17,7 @@ export default function FeatureItem({title, desc, src}: FeatureItemProps) {
           alt={src}
         />
         <p className="my-5 text-xl font-bold">{title}</p>
-        <p className="mb-3 text-secondary">{desc}</p>
+        <p className="mb-3 text-secondary text-center">{desc}</p>
     </div>
   )
 }

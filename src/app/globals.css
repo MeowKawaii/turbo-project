@@ -38,7 +38,7 @@ a {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 
@@ -56,9 +56,16 @@ h3 {
 
 @layer components {
   .btn-primary {
-    @apply bg-btn_primary py-1 px-4 text-white rounded-sm;
+    @apply bg-btn_primary py-1 px-4 text-white;
     &:hover {
       @apply bg-btn_primary-hover text-white;
+    }
+  }
+
+  .btn-outline-primary {
+    @apply text-btn_primary border border-btn_primary py-1 px-4;
+    &:hover {
+      @apply text-btn_primary-hover border border-btn_primary-hover;
     }
   }
 }

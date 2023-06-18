@@ -52,7 +52,7 @@ export default function LetsProSession() {
       </p>
       <div className="mt-20">
         <Link href="https://github.com/ant-design/ant-design-pro" >
-          <button className="btn-primary">
+          <button className="btn-primary rounded-sm">
             Download Pro
           </button>
         </Link>
