@@ -107,7 +107,7 @@ const FOOTER_MENU = [{
   },{
     title: 'Egg',
     desc: 'Enterprise Node.js Framework',
-    url: '',
+    url: 'https://www.eggjs.org/',
   },{
     title: 'Kitchen',
     desc: 'Sketch Toolkit',
