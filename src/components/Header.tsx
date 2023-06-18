@@ -22,7 +22,7 @@ const MENUS = [{
 
 export default function Header() {
   return (
-    <nav className="flex justify-center sm:justify-between items-center py-5 px-8">
+    <nav className="flex justify-center sm:justify-between items-center py-5 px-8 drop-shadow-md bg-white">
       <div className="flex">
         <Image
           src="/logo.svg"
