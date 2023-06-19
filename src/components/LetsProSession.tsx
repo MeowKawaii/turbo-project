@@ -7,7 +7,7 @@ export default function LetsProSession() {
     <div className="text-center my-12">
       <h2 className="space-x-2">
         <span className="font-normal">
-          Let’s
+          Let&#39;s
         </span>
         <span>
           Pro
@@ -48,7 +48,7 @@ export default function LetsProSession() {
         <Link className="text-primary" href="https://pro.ant.design/docs/faq/">faq </Link>
         <span>first, and </span>  
         <Link className="text-primary" href="https://github.com/ant-design/ant-design-pro/issues">ask questions </Link> 
-        <span>in GitHub if they don't help.</span>
+        <span>in GitHub if they don&#39;t help.</span>
       </p>
       <div className="mt-20">
         <Link href="https://github.com/ant-design/ant-design-pro" >
