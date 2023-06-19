@@ -6,12 +6,21 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+    colors: {
+      primary: 'var(--color-primary)',
+      secondary: 'var(--color-secondary)',
+      white: 'var(--color-white)',
+      black: 'var(--color-black)',
+      danger: 'var(--color-danger)',
+      btn_primary: {
+        DEFAULT: 'var(--color-btn-primary)',
+        hover: 'var(--color-btn-primary-hover)'
       },
+    },
+    extend: {
+      maxWidth: {
+        '1400': '1400px',
+      }
     },
   },
   plugins: [],

@@ -3,25 +3,69 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --color-primary: #40a9ff;
+  --color-secondary: #697b8c;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-danger: #f5222d;
+  --color-btn-primary: #1677ff;
+  --color-btn-primary-hover: #4096ff;
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --color-primary: #165c94;
+    --color-secondary: #b0a89c;
+    --color-white: #000000;
+    --color-black: #ffffff;
+    --color-danger: #e24348;
+    --color-btn-primary: #1765ae;
+    --color-btn-primary-hover: #165f99;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: rgb(var(--color-white));
+  font-size: 14px;
+}
+
+a {
+  color: var(--color-white);
+  &:hover {
+    color: var(--color-primary);
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 16px;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-btn_primary py-1 px-4 text-white;
+    &:hover {
+      @apply bg-btn_primary-hover text-white;
+    }
+  }
+
+  .btn-outline-primary {
+    @apply text-btn_primary border border-btn_primary py-1 px-4;
+    &:hover {
+      @apply text-btn_primary-hover border border-btn_primary-hover;
+    }
+  }
 }
