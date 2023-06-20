@@ -118,7 +118,7 @@ const FOOTER_MENU = [{
   }]
 }, ]
 
-export default function Footer() {
+export function Footer() {
   return (
     <div className="bg-black text-white">
       <div className="max-w-1400 mx-auto">

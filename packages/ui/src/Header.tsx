@@ -2,7 +2,7 @@ import React from "react"
 import Image from 'next/image'
 import Link from "next/link"
 
-import MenuItem from '~/components/MenuItem'
+import {MenuItem} from './MenuItem'
 
 const MENUS = [{
   title: 'Documents',
@@ -18,7 +18,7 @@ const MENUS = [{
   url: 'https://github.com/ant-design/ant-design-pro',
 },]
 
-export default function Header() {
+export function Header() {
   return (
     <nav className="flex justify-center md:justify-between items-center px-14 h-12 md:h-16 drop-shadow-md bg-white">
       <div className="flex">

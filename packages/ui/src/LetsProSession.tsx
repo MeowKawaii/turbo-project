@@ -2,7 +2,7 @@ import React from "react"
 
 import Link from "next/link"
 
-export default function LetsProSession() {
+export function LetsProSession() {
   return (
     <div className="text-center my-12">
       <h2 className="space-x-2">

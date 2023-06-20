@@ -1,8 +1,8 @@
-import React from "react"
+import React from 'react'
 import Image from 'next/image'
 import Link from "next/link"
 
-export default function BannerSession() {
+export function BannerSession() {
   return (
     <div className="flex justify-around p-10" style={{height: 520, backgroundColor: "#f9fcff"}}>
       <div className="flex justify-center items-center">

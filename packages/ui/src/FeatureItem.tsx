@@ -7,7 +7,7 @@ interface FeatureItemProps {
   src: string
 }
 
-export default function FeatureItem({title, desc, src}: FeatureItemProps) {
+export function FeatureItem({title, desc, src}: FeatureItemProps) {
   return (
     <div className="flex flex-col justify-center items-center mb-16 mx-2">
       <Image

@@ -1,6 +1,6 @@
-import Header from '~/components/Header'
-import './globals.css'
-import Footer from '~/components/Footer'
+import {Header, Footer} from "ui"
+
+import '../styles/globals.css'
 
 export const metadata = {
   title: 'Ant Design - pro',
