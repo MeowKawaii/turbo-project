@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root {
+  --color-test: #000000;
   --color-primary: #40a9ff;
   --color-secondary: #697b8c;
   --color-white: #ffffff;
@@ -11,18 +12,6 @@
   --color-btn-primary: #1677ff;
   --color-btn-primary-hover: #4096ff;
 
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-primary: #165c94;
-    --color-secondary: #b0a89c;
-    --color-white: #000000;
-    --color-black: #ffffff;
-    --color-danger: #e24348;
-    --color-btn-primary: #1765ae;
-    --color-btn-primary-hover: #165f99;
-  }
 }
 
 body {

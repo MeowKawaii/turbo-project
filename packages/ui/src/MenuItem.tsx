@@ -6,7 +6,7 @@ interface MenuItemProps {
   url: string;
 }
 
-export default function MenuItem({title, url}: MenuItemProps) {
+export function MenuItem({title, url}: MenuItemProps) {
   return (
     <Link className="text-secondary" href={url}>
       {title}

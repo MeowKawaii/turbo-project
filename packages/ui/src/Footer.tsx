@@ -118,9 +118,9 @@ const FOOTER_MENU = [{
   }]
 }, ]
 
-export default function Footer() {
+export function Footer() {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-black text-white px-4">
       <div className="max-w-1400 mx-auto">
         <div className="text-center md:text-start md:flex justify-around py-10 md:py-20">
           {FOOTER_MENU.map(({title, sub_menu}) => (

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import FeatureItem from './FeatureItem'
+import {FeatureItem} from './FeatureItem'
 
 const FEATURES = [{
   title: 'Fast',
@@ -28,7 +28,7 @@ const FEATURES = [{
   src: '/ts_logo.svg'
 }]
 
-export default function FeatureSession() {
+export function FeatureSession() {
 
   return (
     <div className='max-w-1400 mx-auto my-16'>
