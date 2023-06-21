@@ -1,4 +1,4 @@
-import './styles.css'
+import '../styles.css'
 
 export {BannerSession} from "./BannerSession"
 export {FeatureItem} from "./FeatureItem"

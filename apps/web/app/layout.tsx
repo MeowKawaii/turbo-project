@@ -1,6 +1,6 @@
 import {Header, Footer} from "ui"
 
-import '../styles/globals.css'
+import 'ui/styles.css'
 
 export const metadata = {
   title: 'Ant Design - pro',
