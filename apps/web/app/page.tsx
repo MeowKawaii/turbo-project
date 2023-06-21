@@ -2,7 +2,7 @@ import {BannerSession, FeatureSession, LetsProSession} from "ui"
 
 export default function Home() {
   return (
-    <div>
+    <div className="text-primary">
       <BannerSession />
       <FeatureSession />
       <LetsProSession />

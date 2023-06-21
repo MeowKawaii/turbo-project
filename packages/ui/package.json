@@ -1,6 +1,7 @@
 {
   "name": "ui",
   "version": "0.0.0",
+  "main": "./src/index.tsx",
   "types": "./src/index.tsx",
   "scripts": {
     "lint": "eslint \"**/*.ts*\"",

@@ -13,18 +13,6 @@
 
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-primary: #165c94;
-    --color-secondary: #b0a89c;
-    --color-white: #000000;
-    --color-black: #ffffff;
-    --color-danger: #e24348;
-    --color-btn-primary: #1765ae;
-    --color-btn-primary-hover: #165f99;
-  }
-}
-
 body {
   color: rgb(var(--color-white));
   font-size: 14px;
